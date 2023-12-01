@@ -109,7 +109,9 @@
   padding-top:0;
   padding-bottom:.5em;
   opacity:0;
-  transition:opacity .4s ease-in-out,height .4s ease-in-out
+  transition:opacity .4s ease-in-out,height .4s ease-in-out;
+  gap:2rem;
+  color:#fff
   }
   
   .nav--active {
@@ -123,7 +125,11 @@
   }
   
   .nav--item {
-  font-size:1.4rem
+  font-size:1.4rem;
+  width:30%;
+  display:flex;
+  justify-content:center;
+  gap:1rem
   }
   
   .nav--toggler {
