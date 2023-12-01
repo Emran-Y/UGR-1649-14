@@ -8,144 +8,150 @@
   <meta name="keywords" content="Emran, Digital Portfolio, Projects, Learning Journal, Meme Generator, Quiz App, Mobile Restaurant App, Movie Watch-List, HTML, CSS, JavaScript, React, Web Development">
   <meta name="author" content="Emran Yonas">
   <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Projects - Digital Portfolio</title>
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Digital <span>Portfolio</span></h1>
-        </div>
-        <nav>
-            <ul>
-                <li><i class="fas fa-house-chimney"></i> <a href="index.html">Home</a></li>
-                <li><i class="fas fa-user"></i> <a href="about.html">About</a></li>
-                <li><i class="fas fa-microscope"></i> <a href="skills.html">Skills</a></li>
-                <li><i class="fas fa-boxes-stacked"></i> <a href="projects.html">Projects</a></li>
-                <li><i class="fas fa-address-book"></i> <a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </header>
-    <main>
-      <section>
-        <h2>Personal Projects</h2>
-        <p>Explore a collection of my personal projects showcasing a diverse range of skills and creativity.</p>
+  <header class="header">
+    <div class='titles'>
+        <h1 class='header-title'>Digital <span class='title-tobeWhite'>Portfolio</span></h1>
+    </div>
+    <nav>
+        <ul  class="nav--menu">
+            <li class="nav--item"><i class="fas fa-house-chimney"></i> <a class="nav--link" href="index.html">Home</a></li>
+            <li class="nav--item"><i class="fas fa-user"></i> <a class="nav--link" href="about.html">About</a></li>
+            <li class="nav--item"><i class="fas fa-microscope"></i> <a class="nav--link" href="skills.html">Skills</a></li>
+            <li class="nav--item"><i class="fas fa-boxes-stacked"></i> <a class="nav--link" href="projects.html">Projects</a></li>
+            <li class="nav--item"><i class="fas fa-address-book"></i> <a class="nav--link" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="nav--toggler">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+  </header>
+    <main class="projects-main">
+      <section class='projects'>
+        <h2 class='projects-title projects-title-big'>Personal Projects</h2>
+        <p  class="projects-description">Explore a collection of my personal projects showcasing a diverse range of skills and creativity.</p>
         
-        <div>
-          <article>
-            <h3>Learning Journal</h3> 
+        <div class="projects-cont">
+          <article class="project">
+            <h3 class="project-title">Learning Journal</h3> 
             <figure>
-              <video controls>
+              <video class="project-img" controls>
                 <source src="Videos/journal.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
-              <figcaption>My Learning Journal: An interactive web app built with HTML, CSS, and JS to track and document personal learning experiences</figcaption>
+              <figcaption class="project-description">My Learning Journal: An interactive web app built with HTML, CSS, and JS to track and document personal learning experiences</figcaption>
             </figure>
-            <div>
-              <span><i class="fa-brands fa-html5"></i></span>
-              <span><i class="fa-brands fa-css3-alt"></i></span>
-              <span><i class="fa-brands fa-figma"></i></span>
-              <span><i class="fa-brands fa-square-js"></i></span>
+            
+            <div class="tech-stack">
+              <span class="html"><i class="fa-brands fa-html5"></i></span>
+              <span class="css"><i class="fa-brands fa-css3-alt"></i></span>
+              <span class="figma"><i class="fa-brands fa-figma"></i></span>
+              <span class="javascript"><i class="fa-brands fa-square-js"></i></span>
             </div>
-            <a href="https://unrivaled-marzipan-5aa8b4.netlify.app/" target='_blank'><span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
+            <a href="https://unrivaled-marzipan-5aa8b4.netlify.app/" target='_blank' class="preview-bnt"><span class='preview-ico'><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
           </article>
         
-          <article>
-            <h3>Meme Generator</h3>
-              <figure>
-              <video controls>
+          <article class="project">
+            <h3 class="project-title">Meme Generator</h3>
+            <figure>
+              <video class="project-img" controls>
                 <source src="Videos/meme.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
-              <figcaption>Meme Generator: A dynamic web app using HTML, CSS, and JS that generates animated GIFs and pictures based on emojis, creating hilarious memes.</figcaption>
+              <figcaption class="project-description">Meme Generator: A dynamic web app using HTML, CSS, and JS that generates animated GIFs and pictures based on emojis, creating hilarious memes.</figcaption>
             </figure>
-             <div>
-              <span><i class="fa-brands fa-html5"></i></span>
-              <span><i class="fa-brands fa-css3-alt"></i></span>
-              <span><i class="fa-brands fa-figma"></i></span>
-              <span><i class="fa-brands fa-square-js"></i></span>
+            <div class="tech-stack">
+              <span class="html"><i class="fa-brands fa-html5"></i></span>
+              <span class="css"><i class="fa-brands fa-css3-alt"></i></span>
+              <span class="figma"><i class="fa-brands fa-figma"></i></span>
+              <span class="javascript"><i class="fa-brands fa-square-js"></i></span>
             </div>
-            <a href="https://merry-axolotl-a4fd8a.netlify.app" target='_blank'><span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
+            <a href="https://unrivaled-marzipan-5aa8b4.netlify.app/" target='_blank' class="preview-bnt"><span class='preview-ico'><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
           </article>
           
-          <article>
-            <h3>Quiz App</h3>
+          <article class="project">
+            <h3 class="project-title">Quiz App</h3>
             <figure>
-              <img src='Images/Quiz.jpeg' alt="Quiz App Preview"/>
-              <figcaption>Quiz App: React-based interactive app that fetches 5 questions from an external API, with categorized questions and enhanced using React libraries.</figcaption>
+              <img class="project-img" src='Images/Quiz.jpeg' alt="Quiz App Preview"/>
+              <figcaption class="project-description">Quiz App: React-based interactive app that fetches 5 questions from an external API, with categorized questions and enhanced using React libraries.</figcaption>
             </figure>
-            <div>
-              <span><i class="fa-brands fa-html5"></i></span>
-              <span><i class="fa-brands fa-css3-alt"></i></span>
-              <span><i class="fa-brands fa-figma"></i></span>
-              <span><i class="fa-brands fa-square-js"></i></span>
-              <i class="fa-brands fa-react"></i>
+            <div class="tech-stack">
+              <span class="html"><i class="fa-brands fa-html5"></i></span>
+              <span class="css"><i class="fa-brands fa-css3-alt"></i></span>
+              <span class="figma"><i class="fa-brands fa-figma"></i></span>
+              <span class="javascript"><i class="fa-brands fa-square-js"></i></span>
+              <i class="fa-brands fa-react react"></i>
             </div>
-            <a href="https://64fb112e38671d773b115a40--gregarious-chaja-4ca3dd.netlify.app/" target='_blank'><span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
+            <a href="https://unrivaled-marzipan-5aa8b4.netlify.app/" target='_blank' class="preview-bnt"><span class='preview-ico'><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
+          </article>
+          
+
+          <article class="project">
+            <h3 class="project-title">Mobile Restaurant App</h3>
+            <figure>
+              <img class="project-img" src='Images/sol.jpeg' alt="Mobile Restaurant App Preview"/>
+              <figcaption class="project-description">Mobile Restaurant Menu: A sleek and visually appealing ordering app for small shops, designed using HTML, CSS, and JS.</figcaption>
+            </figure>
+            <div class="tech-stack">
+              <span class="html"><i class="fa-brands fa-html5"></i></span>
+              <span class="css"><i class="fa-brands fa-css3-alt"></i></span>
+              <span class="figma"><i class="fa-brands fa-figma"></i></span>
+              <span class="javascript"><i class="fa-brands fa-square-js"></i></span>
+            </div>
+            <a href="https://unrivaled-marzipan-5aa8b4.netlify.app/" target='_blank' class="preview-bnt"><span class='preview-ico'><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
           </article>
 
-          <article>
-            <h3>Mobile Restaurant App</h3>
+          <article class="project">
+            <h3 class="project-title">Movie Watch-List</h3>
             <figure>
-              <img src='Images/sol.jpeg' alt="Mobile Restaurant App Preview"/>
-              <figcaption>Mobile Restaurant Menu: A sleek and visually appealing ordering app for small shops, designed using HTML, CSS, and JS.</figcaption>
+              <img class="project-img" src='Images/watchList.jpeg' alt="Movie Watch-List Preview"/>
+              <figcaption class="project-description">Movie Watchlist: A responsive app using HTML, CSS, and JS that allows you to search for movies, displaying posters, descriptions, ratings, and saving films for later viewing. It utilizes an external film API.</figcaption>
             </figure>
-            <div>
-              <span><i class="fa-brands fa-html5"></i></span>
-              <span><i class="fa-brands fa-css3-alt"></i></span>
-              <span><i class="fa-brands fa-figma"></i></span>
-              <span><i class="fa-brands fa-square-js"></i></span>
+            <div class="tech-stack">
+              <span class="html"><i class="fa-brands fa-html5"></i></span>
+              <span class="css"><i class="fa-brands fa-css3-alt"></i></span>
+              <span class="figma"><i class="fa-brands fa-figma"></i></span>
+              <span class="javascript"><i class="fa-brands fa-square-js"></i></span>
             </div>
-            <a href="https://grand-cranachan-a9dbd5.netlify.app/" target='_blank'><span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
-          </article>
-
-          <article>
-            <h3>Movie Watch-List</h3>
-            <figure>
-              <img src='Images/watchList.jpeg' alt="Movie Watch-List Preview"/>
-              <figcaption>Movie Watchlist: A responsive app using HTML, CSS, and JS that allows you to search for movies, displaying posters, descriptions, ratings, and saving films for later viewing. It utilizes an external film API.</figcaption>
-            </figure>
-            <div>
-              <span><i class="fa-brands fa-html5"></i></span>
-              <span><i class="fa-brands fa-css3-alt"></i></span>
-              <span><i class="fa-brands fa-figma"></i></span>
-              <span><i class="fa-brands fa-square-js"></i></span>
-            </div>
-            <a href="https://delightful-lily-3f2abf.netlify.app/" target='_blank'><span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
+            <a href="https://unrivaled-marzipan-5aa8b4.netlify.app/" target='_blank' class="preview-bnt"><span class='preview-ico'><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
           </article>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class='footer'>
       <div>
-          <h1>Digital <span>Portfolio</span></h1>
+          <h1 class='header-title'>Digital <span class='title-tobeWhite'>Portfolio</span></h1>
       </div>
       <nav>
-          <ul>
-              <li><a href="https://twitter.com/Emran_Yonas"><i class="fab fa-twitter"></i> <span>Twitter</span></a></li>
-              <li><a href="https://www.linkedin.com/in/emran-yonas-yimer-230192232/"><i class="fab fa-linkedin-in"></i> <span>LinkedIn</span> </a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i> <span>Instagram</span></a></li>
+          <ul class="footer-reach-me">
+              <li><a class="footer-reach-me-on" href="https://twitter.com/Emran_Yonas"><i class="fab fa-twitter"></i> <span class="reach-me-on-message">Twitter</span></a></li>
+              <li><a class="footer-reach-me-on" href="https://www.linkedin.com/in/emran-yonas-yimer-230192232/"><i class="fab fa-linkedin-in"></i> <span class="reach-me-on-message">LinkedIn</span> </a></li>
+              <li><a class="footer-reach-me-on" href="#"><i class="fab fa-instagram"></i> <span class="reach-me-on-message">Instagram</span></a></li>
           </ul>
       </nav>
       
-      <section>
-          <h3>Quick Links</h3>
+      <section class="quick-links">
+          <h3 class="quick-links-title" >Quick Links</h3>
           <nav>
               <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="skills.html">Skills</a></li>
-                  <li><a href="projects.html">Projects</a></li>
-                  <li><a href="contact.html">Contact Me</a></li>
+                  <li><a class="quick-link" href="index.html">Home</a></li>
+                  <li><a class="quick-link" href="skills.html">Skills</a></li>
+                  <li><a class="quick-link" href="projects.html">Projects</a></li>
+                  <li><a class="quick-link" href="contact.html">Contact Me</a></li>
               </ul>
           </nav>
           
       </section>
-      <div>&copy; Copyright 2023 Emran</div>
+      <div  class="last-footer">&copy; Copyright 2023 Emran</div>
   </footer>
 </body>
 </html>
