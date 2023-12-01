@@ -1,0 +1,389 @@
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  }
+body {
+    padding:0;
+    margin:0;
+    font-family:karla;
+    background-color:#FCDE21;
+    overflow-x:hidden;
+    position:relative
+    }
+html {
+      scroll-behavior:smooth
+      }
+.header{
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 0.2fr;
+  grid-auto-rows: 110px;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100vw;
+  background-color: black;
+  height: 130px;
+  padding: 1em;
+  padding-right: 2em;
+  position: fixed;
+  inset: 0;
+  border-bottom: 1px solid #FCDE21;
+}
+
+
+
+.header-title {
+  font-size: 3.3rem;
+  color: #FCDE21;
+  max-width: 50%;
+}
+
+.title-tobeWhite {
+  margin-top: -10px;
+  font-size: 3.3rem;
+  color: #fff;
+}
+@media(max-width:320px){
+.header-title {
+  font-size: 200%;
+  color: #FCDE21;
+  max-width: 30%;
+}
+
+.title-tobeWhite {
+  margin-top: -10px;
+  font-size: 100%;
+  color: #fff;
+}
+}
+
+.header li{
+  list-style: none;
+}
+.header a{
+  text-decoration: none;
+  color: white;
+}
+.nav--toggler div{
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background-color:white;
+  transition: 0.5s ease-in;
+}
+
+.nav{
+  position: static;
+}
+
+.nav--menu {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: black;
+  gap: 0.7rem;
+  padding-block: 1.7em;
+  padding-top: 0;
+  padding-bottom: 0.5em;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out, height 0.4s ease-in-out;
+  /* border-top: 1px solid #FCDE21; */
+}
+
+.nav--active {
+  padding: 1rem;
+  height: 63vh;
+  opacity: 1;
+}
+
+.nav--item{
+  font-size: 1.4rem;
+  display: grid;
+  grid-template-columns: 0.3fr 0.5fr;
+  gap:1em;
+}
+
+
+.nav--toggler{
+  cursor: pointer;
+}
+.nav--item{
+  position: relative;
+  color: white;
+  gap:0.7rem;
+}
+  
+.nav--link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FFCA28; /* Replace with your desired color */
+  transition: width 0.3s ease-out;
+}
+
+.nav--link:hover::after {
+  width: 100%;
+}
+.nav--link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* styling home */
+
+
+
+.home {
+  padding-top: 150px;
+  background-color: #FCDE21;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.messages-me {
+  max-width: 70%;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+
+.welcome-message {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.my-image {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  height: 170px;
+  width: 170px;
+}
+
+.my--name {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+
+.about-me-message {
+  font-weight: lighter;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 150%;
+}
+
+.about-me--message {
+  font-weight: bold;
+  display: block;
+}
+
+.social-media {
+  font-size: 1.7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  gap: 1rem;
+}
+
+.social-media > a {
+  color: rgb(55, 50, 50);
+  font-weight: lighter;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  justify-self: center;
+}
+
+.social-media > a > .social-media-text{
+font-size: 0.8rem;
+}
+
+.social-media > a:hover {
+  color: black;
+  transform: scale(1.4);
+}
+
+.about-me-buttons {
+  display: grid;
+  grid-template-columns: 0.28fr 0.65fr;
+  gap: 1em;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+
+.about-hire-me {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 5px;
+  font-family: karla;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.about-download-my-cv {
+  background-color: #FCDE21;
+  border: 1px solid black;
+  padding: 1em 2em;
+  border-radius: 5px;
+  font-family: karla;
+  font-size: 1rem;
+  font-family: karla;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.download-icon {
+  margin-right: 10px;
+}
+
+.about-hire-me:hover{
+  font-weight: bold;
+}
+.about-download-my-cv:hover{
+  font-weight: bold;
+}
+
+  @media(max-width:440px){
+    .about-me-buttons{
+     grid-template-columns: 1fr;
+    }
+  }
+
+@media(max-width:315px){
+  .about-me-message{
+    font-size: 1.5rem;
+  }
+}
+
+/* Styling footer */
+
+.footer{
+  background-color: black;
+  /* padding-right: 5%; */
+  padding-top: 25px;
+  padding-bottom: 0;
+  /* margin-right: -160px; */
+  border-top: 1px solid white;
+}
+
+.footer-reach-me {
+  display: grid;
+  gap: 0.6em;
+  margin-top: 35px;
+  border-bottom: 1px solid #FFCA28;
+  padding-bottom: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px;
+  min-width: 80%;
+
+}
+
+.footer > :not(:last-child) {
+  padding: 20px;
+}
+
+.footer-reach-me-on {
+  color: rgb(209, 200, 200);
+  font-size: 1.5rem;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  padding: 0.4em;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 0.1fr;
+}
+
+.reach-me-on-message {
+  font-size: 0.7rem;
+  margin-top: 5px;
+}
+
+.footer-reach-me-on:hover {
+  transform: scale(1.3);
+}
+
+.quick-links {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.quick-links-title {
+  color: whitesmoke;
+  margin-bottom: 20px;
+  text-align: center;
+  text-align: left;
+}
+
+.quick-link {
+  color: rgb(209, 200, 200);
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+}
+
+.quick-link:hover {
+  color: white;
+}
+
+.quick-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #FFCA28;
+  transition: width 0.3s ease-out, left 0.3s ease-out;
+}
+
+.quick-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.quick-links nav ul li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.last-footer {
+  color: rgb(224, 212, 212);
+  text-align: center;
+  background-color: rgb(25, 24, 24);
+  min-width: 100%;
+  padding-block: 1.7em;
+  letter-spacing: 0.05rem;
+  margin-top: 30px;
+}
