@@ -143,10 +143,8 @@
   width:100%
   }
   
-  .nav--link {
-  display:flex;
-  justify-content:center;
-  align-items:center
+  .nav--link{
+    margin-top: 13px;
   }
   
   .home {
@@ -252,11 +250,9 @@
   padding:1em 2em;
   border-radius:5px;
   font-family:karla;
+  text-align: center;
   font-size:1rem;
   font-family:karla;
-  display:flex;
-  justify-content:center;
-  align-items:center;
   cursor:pointer;
   text-decoration:none;
   color:#000
