@@ -457,6 +457,11 @@ body {
   }
 }
 
+.messageOnSubmit{
+  display: block;
+  margin-bottom: 10px;
+}
+
 /* styling about page */
 
 .about-main {

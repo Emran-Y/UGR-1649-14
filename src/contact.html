@@ -55,10 +55,11 @@
                     <li><a class="reach-me-on" href="#"><i class="fab fa-instagram"></i> <span class="reach-me-on-message">Instagram</span></a></li>
                 </ul>
             </nav>
-            <form class="my-form">
-                <input required type="text" name="Name" class='Name' placeholder="Your Name">
-                <input required type="email" name="Email" class='Name'  placeholder="Your Email">
-                <textarea required name="Message" class='text-area' placeholder="Your Message"></textarea>
+            <form class="my-form" id="myForm">
+                <input type="text" name="Name" class='Name' placeholder="Your Name">
+                <input type="email" name="Email" class='Name'  placeholder="Your Email">
+                <textarea name="Message" class='text-area' placeholder="Your Message"></textarea>
+                <span class="messageOnSubmit" id="messageOnSubmit"></span>
                 <button type="submit" class='submit-btn'>Submit</button>
             </form>
         </div>
