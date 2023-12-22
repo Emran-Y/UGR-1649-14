@@ -9,113 +9,114 @@
     <meta name="keywords" content="Emran, Digital Portfolio, Projects, Learning Journal, Meme Generator, Quiz App, Mobile Restaurant App, Movie Watch-List, HTML, CSS, JavaScript, React, Web Development">
     <meta name="author" content="Emran Yonas">
     <meta name="robots" content="index, follow">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Skills - Digital Portfolio</title>
 </head>
 
-<body>
-    <header>
-        <div>
-            <h1>Digital <span>Portfolio</span></h1>
+<body class="bg-yellow-300 ">
+    <header class="bg-black flex justify-between items-center h-32 p-5 border-b border-yellow-300" >
+        <div class="">
+            <h1 class="text-yellow-300 text-3xl font-bold">Digital <span class="block text-white mt-1">Portfolio</span></h1>
         </div>
-        <nav>
-            <ul>
-                <li><i class="fas fa-house-chimney"></i> <a href="index.html">Home</a></li>
-                <li><i class="fas fa-user"></i> <a href="about.html">About</a></li>
-                <li><i class="fas fa-microscope"></i> <a href="skills.html">Skills</a></li>
-                <li><i class="fas fa-boxes-stacked"></i> <a href="projects.html">Projects</a></li>
-                <li><i class="fas fa-address-book"></i> <a href="contact.html">Contact</a></li>
+        <nav class="flex justify-center text-white sm:block sm:static absolute bg-black top-32 left-0 right-0 hidden " id="nav-menu">
+            <ul class="flex flex-col sm:flex-row py-4">
+              <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-house-chimney"></i> <a href="index.html">Home</a></li>
+              <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-user"></i> <a href="about.html">About</a></li>
+              <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-microscope"></i> <a href="skills.html">Skills</a></li>
+              <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-boxes-stacked"></i> <a href="projects.html">Projects</a></li>
+              <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-address-book"></i> <a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
+          </nav>
+        <div class="block sm:hidden flex flex-col items-center justify-center" id="toggler">
+            <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
+            <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
+            <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
         </div>
     </header>
-    <main>
-        <section>
-            <h2>What I Do</h2>
-            <p>Passionate about coding, I create innovative solutions and delightful user experiences.</p>
+    <main class="py-10">
+        <section class="flex flex-col items-center">
+            <h2 class="text-3xl font-semibold text-center">What I Do</h2>
+            <p class="text-center">Passionate about coding, I create innovative solutions and delightful user experiences.</p>
         </section>
-        <section>
-            <h2>Skills</h2>
-            <table>
+        <section class="mx-auto">
+            
+            <table class="mx-auto w-full flex flex-col items-center">
                 <thead>
                     <tr>  
-                        <th>Skill</th>
+                        <th><h2 class="text-3xl font-semibold mt-8 mb-4">Skills</h2></th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="flex flex-wrap  justify-center md:w-2/5">
                     <tr>
                         <td>
-                            <div>
-                                <i class="fa-brands fa-html5"></i> <br>
-                                <h3>HTML</h3>
+                            <div class="bg-white flex flex-col items-center w-36 p-3 mt-4 mr-4 rounded-xl xl:w-80">
+                                <i class="text-4xl xl:text-5xl fa-brands fa-html5"></i> <br>
+                                <h3 class="text-2xl font-light">HTML</h3>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <div>
-                                <i class="fa-brands fa-css3-alt"></i> <br>
-                                <h3>CSS</h3>
+                            <div class="bg-white flex flex-col items-center w-36 p-3 mt-4 mr-4 rounded-xl xl:w-80">
+                                <i class="text-4xl xl:text-5xl fa-brands fa-css3-alt"></i> <br>
+                                <h3 class="text-2xl font-light">CSS</h3>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <div>
-                                <i class="fa-brands fa-bootstrap"></i> <br>
-                                <h3>Bootstrap</h3>
+                            <div class="bg-white flex flex-col items-center w-36 p-3 mt-4 mr-4 rounded-xl xl:w-80">
+                                <i class="text-4xl xl:text-5xl fa-brands fa-bootstrap"></i> <br>
+                                <h3 class="text-2xl font-light">Bootstrap</h3>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <div>
-                                <i class="fa-brands fa-figma"></i> <br>
-                                <h3>Figma</h3>
+                            <div class="bg-white flex flex-col items-center w-36 p-3 mt-4 mr-4 rounded-xl xl:w-80">
+                                <i class="text-4xl xl:text-5xl fa-brands fa-figma"></i> <br>
+                                <h3 class="text-2xl font-light">Figma</h3>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <div>
-                                <i class="fa-brands fa-js"></i> <br>
-                                <h3>JavaScript</h3>
+                            <div class="bg-white flex flex-col items-center w-36 p-3 mt-4 mr-4 rounded-xl xl:w-80">
+                                <i class="text-4xl xl:text-5xl fa-brands fa-js"></i> <br>
+                                <h3 class="text-2xl font-light">JavaScript</h3>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <div>
-                                <i class="fa-brands fa-react"></i> <br>
-                                <h3>React</h3>
+                            <div class="bg-white flex flex-col items-center w-36 p-3 mt-4 mr-4 rounded-xl xl:w-80">
+                                <i class="text-4xl xl:text-5xl fa-brands fa-react"></i> <br>
+                                <h3 class="text-2xl font-light">React</h3>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <div>
-                                <i class="fa-brands fa-python"></i> <br>
-                                <h3>Python</h3>
+                            <div class="bg-white flex flex-col items-center w-36 p-3 mt-4 mr-4 rounded-xl xl:w-80">
+                                <i class="text-4xl xl:text-5xl fa-brands fa-python"></i> <br>
+                                <h3 class="text-2xl font-light">Python</h3>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <div>
-                                <i class="fa-brands fa-java"></i> <br>
-                                <h3>Java</h3>
+                            <div class="bg-white flex flex-col items-center w-36 p-3 mt-4 mr-4 rounded-xl xl:w-80">
+                                <i class="text-4xl xl:text-5xl fa-brands fa-java"></i> <br>
+                                <h3 class="text-2xl font-light">Java</h3>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <div>
-                                <i class="fa-brands fa-github"></i> <br>
-                                <h3>GitHub</h3>
+                            <div class="bg-white flex flex-col items-center w-36 p-3 mt-4 mr-4 rounded-xl xl:w-80">
+                                <i class="text-4xl xl:text-5xl fa-brands fa-github"></i> <br>
+                                <h3 class="text-2xl font-light">GitHub</h3>
                             </div>
                         </td>
                     </tr>
@@ -123,30 +124,31 @@
             </table>
         </section>
     </main>
-    <footer>
-        <div>
-            <h1>Digital <span>Portfolio</span></h1>
+    <footer class="bg-black">
+        <div class="mb-8 px-5 pt-5" >
+            <h1 class="text-yellow-300 text-4xl font-bold">Digital <span class="block text-white mt-1">Portfolio</span></h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="https://twitter.com/Emran_Yonas"><i class="fab fa-twitter"></i> <span>Twitter</span></a></li>
-                <li><a href="https://www.linkedin.com/in/emran-yonas-yimer-230192232/"><i class="fab fa-linkedin-in"></i> <span>LinkedIn</span> </a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i> <span>Instagram</span></a></li>
+        <nav class="border-b border-yellow-300 pb-10 p-5">
+            <ul class="text-white flex justify-start flex-wrap">
+                <li><a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="https://twitter.com/Emran_Yonas"><i class="mb-2 sm:text-3xl text-1xl fab fa-twitter"></i> <span class="text-sm">Twitter</span></a></li>
+                <li><a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="https://www.linkedin.com/in/emran-yonas-yimer-230192232/"><i class="mb-2 sm:text-3xl text-1xl fab fa-linkedin-in"></i> <span class="text-sm">LinkedIn</span> </a></li>
+                <li><a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="#"><i class="mb-2 sm:text-3xl text-1xl fab fa-instagram"></i> <span class="text-sm">Instagram</span></a></li>
             </ul>
         </nav>
         
-        <section>
-            <h3>Quick Links</h3>
+        <section class="text-white pt-4 p-5">
+            <h3 class="text-2xl pb-4">Quick Links</h3>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+                    <li class="mb-2"><a href="index.html">Home</a></li>
+                    <li class="mb-2"><a href="skills.html">Skills</a></li>
+                    <li class="mb-2"><a href="projects.html">Projects</a></li>
+                    <li class="mb-2"><a href="contact.html">Contact Me</a></li>
                 </ul>
             </nav>
+            
         </section>
-        <div>&copy; Copyright 2023 Emran</div>
+        <div class="bg-gray-800 text-white p-5 text-center">&copy; Copyright 2023 Emran</div>
     </footer>
 </body>
 
