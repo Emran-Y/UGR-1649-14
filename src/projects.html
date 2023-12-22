@@ -1,240 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to my portfolio! Explore a collection of my personal projects, including a Learning Journal, Meme Generator, Quiz App, Mobile Restaurant App, and Movie Watch-List. Each project showcases a variety of skills in web development.">
-    <meta name="keywords" content="Emran, Digital Portfolio, Projects, Learning Journal, Meme Generator, Quiz App, Mobile Restaurant App, Movie Watch-List, HTML, CSS, JavaScript, React, Web Development">
-    <meta name="author" content="Emran Yonas">
-    <meta name="robots" content="index, follow">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Projects - Digital Portfolio</title>
-  </head>
-  <body class="bg-yellow-300">
-    <header class="bg-black flex justify-between items-center h-32 p-5 border-b border-yellow-300">
-      <div>
-        <h1 class="text-yellow-300 text-3xl font-bold">Digital <span class="block text-white mt-1">Portfolio</span>
-        </h1>
-      </div>
-      <nav class="flex justify-center text-white sm:block sm:static absolute bg-black top-32 left-0 right-0 hidden " id="nav-menu">
-        <ul class="flex flex-col sm:flex-row py-4">
-          <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white">
-            <i class="fas fa-house-chimney"></i>
-            <a href="index.html">Home</a>
-          </li>
-          <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white">
-            <i class="fas fa-user"></i>
-            <a href="about.html">About</a>
-          </li>
-          <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white">
-            <i class="fas fa-microscope"></i>
-            <a href="skills.html">Skills</a>
-          </li>
-          <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white">
-            <i class="fas fa-boxes-stacked"></i>
-            <a href="projects.html">Projects</a>
-          </li>
-          <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white">
-            <i class="fas fa-address-book"></i>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="block sm:hidden flex flex-col items-center justify-center" id="toggler">
-        <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
-        <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
-        <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to my portfolio! Explore a collection of my personal projects, including a Learning Journal, Meme Generator, Quiz App, Mobile Restaurant App, and Movie Watch-List. Each project showcases a variety of skills in web development.">
+
+  <meta name="keywords" content="Emran, Digital Portfolio, Projects, Learning Journal, Meme Generator, Quiz App, Mobile Restaurant App, Movie Watch-List, HTML, CSS, JavaScript, React, Web Development">
+  <meta name="author" content="Emran Yonas">
+  <meta name="robots" content="index, follow">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Projects - Digital Portfolio</title>
+</head>
+<body class="bg-yellow-300">
+   <header class="bg-black flex justify-between items-center h-32 p-5 border-b border-yellow-300" >
+        <div>
+            <h1 class="text-yellow-300 text-3xl font-bold">Digital <span class="block text-white mt-1">Portfolio</span></h1>
+        </div>
+        <nav class="flex justify-center text-white sm:block sm:static absolute bg-black top-32 left-0 right-0 hidden " id="nav-menu">
+          <ul class="flex flex-col sm:flex-row py-4">
+            <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-house-chimney"></i> <a href="index.html">Home</a></li>
+            <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-user"></i> <a href="about.html">About</a></li>
+            <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-microscope"></i> <a href="skills.html">Skills</a></li>
+            <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-boxes-stacked"></i> <a href="projects.html">Projects</a></li>
+            <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-address-book"></i> <a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="block sm:hidden flex flex-col items-center justify-center" id="toggler">
+            <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
+            <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
+            <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
+        </div>
     </header>
     <main class="py-10">
       <section>
-        <h2 class="text-3xl font-semibold text-center">Personal Projects</h2>
+        <h2 class="text-3xl font-semibold text-center" >Personal Projects</h2>
         <p class="font-light text-center mb-4">Explore a collection of my personal projects showcasing a diverse range of skills and creativity.</p>
+        
         <div class="flex w-full lg:w-3/5 xl:w-2/4 flex-wrap mx-auto justify-center">
           <article class="flex flex-col items-center border border-black w-72 mr-4 mt-4 rounded-lg px-4">
-            <h3 class="mb-4 mt-4 font-semibold text-xl">Learning Journal</h3>
+            <h3 class="mb-4 mt-4 font-semibold text-xl">Learning Journal</h3> 
             <figure>
               <video controls class=" h-40 mb-2 rounded-xl border border-black object-cover">
-                <source src="Videos/journal.mp4" type="video/mp4"> Your browser does not support the video tag.
+                <source src="Videos/journal.mp4" type="video/mp4" >
+                Your browser does not support the video tag.
               </video>
               <figcaption class="text-center mb-4 font-light">My Learning Journal: An interactive web app built with HTML, CSS, and JS to track and document personal learning experiences</figcaption>
             </figure>
             <div>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-html5"></i>
-              </span>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-css3-alt"></i>
-              </span>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-figma"></i>
-              </span>
-              <span>
-                <i class="text-2xl fa-brands fa-square-js"></i>
-              </span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-html5"></i></span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-css3-alt"></i></span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-figma"></i></span>
+              <span><i class="text-2xl fa-brands fa-square-js"></i></span>
             </div>
-            <a href="https://unrivaled-marzipan-5aa8b4.netlify.app/" class="flex items-center justify-center bg-black text-white p-2 rounded-md mb-4 mt-4 w-32" target='_blank'>
-              <span class="mr-2">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </span>Preview </a>
+            <a href="https://unrivaled-marzipan-5aa8b4.netlify.app/" class="flex items-center justify-center bg-black text-white p-2 rounded-md mb-4 mt-4 w-32" target='_blank'><span class="mr-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
           </article>
+        
           <article class="flex flex-col items-center border border-black w-72 mr-4 mt-4 rounded-lg px-4">
             <h3 class="mb-4 mt-4 font-semibold text-xl">Meme Generator</h3>
-            <figure>
+              <figure>
               <video controls class=" h-40 mb-2 rounded-xl border border-black object-cover">
-                <source src="Videos/meme.mp4" type="video/mp4"> Your browser does not support the video tag.
+                <source src="Videos/meme.mp4" type="video/mp4">
+                Your browser does not support the video tag.
               </video>
               <figcaption class="text-center mb-4 font-light">Meme Generator: A dynamic web app using HTML, CSS, and JS that generates animated GIFs and pictures based on emojis, creating hilarious memes.</figcaption>
             </figure>
-            <div>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-html5"></i>
-              </span>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-css3-alt"></i>
-              </span>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-figma"></i>
-              </span>
-              <span>
-                <i class="text-2xl fa-brands fa-square-js"></i>
-              </span>
+             <div>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-html5"></i></span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-css3-alt"></i></span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-figma"></i></span>
+              <span><i class="text-2xl fa-brands fa-square-js"></i></span>
             </div>
-            <a class="flex items-center justify-center bg-black text-white p-2 rounded-md mb-4 mt-4 w-32" href="https://merry-axolotl-a4fd8a.netlify.app" target='_blank'>
-              <span class="mr-2">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </span>Preview </a>
+            <a class="flex items-center justify-center bg-black text-white p-2 rounded-md mb-4 mt-4 w-32"  href="https://merry-axolotl-a4fd8a.netlify.app" target='_blank'><span class="mr-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
           </article>
+          
           <article class="flex flex-col items-center border border-black w-72 mr-4 mt-4 rounded-lg px-4">
             <h3 class="mb-4 mt-4 font-semibold text-xl">Quiz App</h3>
             <figure>
-              <img src='Images/Quiz.jpeg' alt="Quiz App Preview" class=" h-40 mb-2 rounded-xl border border-black object-cover" />
+              <img src='Images/Quiz.jpeg' alt="Quiz App Preview" class=" h-40 mb-2 rounded-xl border border-black object-cover"/>
               <figcaption class="text-center mb-4 font-light">Quiz App: React-based interactive app that fetches 5 questions from an external API, with categorized questions and enhanced using React libraries.</figcaption>
             </figure>
             <div>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-html5"></i>
-              </span>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-css3-alt"></i>
-              </span>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-figma"></i>
-              </span>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-square-js"></i>
-              </span>
-              <span>
-                <i class=" text-2xl fa-brands fa-react"></i>
-              </span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-html5"></i></span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-css3-alt"></i></span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-figma"></i></span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-square-js"></i></span>
+              <span><i class=" text-2xl fa-brands fa-react"></i></span>
             </div>
-            <a class="flex items-center justify-center bg-black text-white p-2 rounded-md mb-4 mt-4 w-32" href="https://64fb112e38671d773b115a40--gregarious-chaja-4ca3dd.netlify.app/" target='_blank'>
-              <span class="mr-2">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </span>Preview </a>
+            <a class="flex items-center justify-center bg-black text-white p-2 rounded-md mb-4 mt-4 w-32"  href="https://64fb112e38671d773b115a40--gregarious-chaja-4ca3dd.netlify.app/" target='_blank'><span class="mr-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
           </article>
+
           <article class="flex flex-col items-center border border-black w-72 mr-4 mt-4 rounded-lg px-4">
             <h3 class="mb-4 mt-4 font-semibold text-xl">Mobile Restaurant App</h3>
             <figure>
-              <img src='Images/sol.jpeg' alt="Mobile Restaurant App Preview" class=" h-40 mb-2 rounded-xl border border-black object-cover mx-auto" />
+              <img src='Images/sol.jpeg' alt="Mobile Restaurant App Preview" class=" h-40 mb-2 rounded-xl border border-black object-cover mx-auto"/>
               <figcaption class="text-center mb-4 font-light">Mobile Restaurant Menu: A sleek and visually appealing ordering app for small shops, designed using HTML, CSS, and JS.</figcaption>
             </figure>
             <div>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-html5"></i>
-              </span>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-css3-alt"></i>
-              </span>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-figma"></i>
-              </span>
-              <span>
-                <i class="text-2xl fa-brands fa-square-js"></i>
-              </span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-html5"></i></span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-css3-alt"></i></span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-figma"></i></span>
+              <span><i class="text-2xl fa-brands fa-square-js"></i></span>
             </div>
-            <a class="flex items-center justify-center bg-black text-white p-2 rounded-md mb-4 mt-4 w-32" href="https://grand-cranachan-a9dbd5.netlify.app/" target='_blank'>
-              <span class="mr-2">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </span>Preview </a>
+            <a class="flex items-center justify-center bg-black text-white p-2 rounded-md mb-4 mt-4 w-32"  href="https://grand-cranachan-a9dbd5.netlify.app/" target='_blank'><span class="mr-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
           </article>
+
           <article class="flex flex-col items-center border border-black w-72 mr-4 mt-4 rounded-lg px-4">
             <h3 class="mb-4 mt-4 font-semibold text-xl">Movie Watch-List</h3>
             <figure>
-              <img src='Images/watchList.jpeg' alt="Movie Watch-List Preview" class=" h-40 mb-2 rounded-xl border border-black object-cover" />
+              <img src='Images/watchList.jpeg' alt="Movie Watch-List Preview" class=" h-40 mb-2 rounded-xl border border-black object-cover"/>
               <figcaption class="text-center mb-4 font-light">Movie Watchlist: A responsive app using HTML, CSS, and JS that allows you to search for movies, displaying posters, descriptions, ratings, and saving films for later viewing. It utilizes an external film API.</figcaption>
             </figure>
             <div>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-html5"></i>
-              </span>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-css3-alt"></i>
-              </span>
-              <span class="mr-2">
-                <i class="text-2xl fa-brands fa-figma"></i>
-              </span>
-              <span>
-                <i class="text-2xl fa-brands fa-square-js"></i>
-              </span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-html5"></i></span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-css3-alt"></i></span>
+              <span class="mr-2"><i class="text-2xl fa-brands fa-figma"></i></span>
+              <span><i class="text-2xl fa-brands fa-square-js"></i></span>
             </div>
-            <a class="flex items-center justify-center bg-black text-white p-2 rounded-md mb-4 mt-4 w-32" href="https://delightful-lily-3f2abf.netlify.app/" target='_blank'>
-              <span class="mr-2">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </span>Preview </a>
+            <a class="flex items-center justify-center bg-black text-white p-2 rounded-md mb-4 mt-4 w-32"  href="https://delightful-lily-3f2abf.netlify.app/" target='_blank'><span class="mr-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>Preview</a>
           </article>
         </div>
       </section>
     </main>
     <footer class="bg-black">
-      <div class="mb-8 px-5 pt-5">
-        <h1 class="text-yellow-300 text-4xl font-bold">Digital <span class="block text-white mt-1">Portfolio</span>
-        </h1>
+      <div class="mb-8 px-5 pt-5" >
+          <h1 class="text-yellow-300 text-4xl font-bold">Digital <span class="block text-white mt-1">Portfolio</span></h1>
       </div>
       <nav class="border-b border-yellow-300 pb-10 p-5">
-        <ul class="text-white flex justify-start flex-wrap">
-          <li>
-            <a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="https://twitter.com/Emran_Yonas">
-              <i class="mb-2 sm:text-3xl text-1xl fab fa-twitter"></i>
-              <span class="text-sm">Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="https://www.linkedin.com/in/emran-yonas-yimer-230192232/">
-              <i class="mb-2 sm:text-3xl text-1xl fab fa-linkedin-in"></i>
-              <span class="text-sm">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="#">
-              <i class="mb-2 sm:text-3xl text-1xl fab fa-instagram"></i>
-              <span class="text-sm">Instagram</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <section class="text-white pt-4 p-5">
-        <h3 class="text-2xl pb-4">Quick Links</h3>
-        <nav>
-          <ul>
-            <li class="mb-2">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="mb-2">
-              <a href="skills.html">Skills</a>
-            </li>
-            <li class="mb-2">
-              <a href="projects.html">Projects</a>
-            </li>
-            <li class="mb-2">
-              <a href="contact.html">Contact Me</a>
-            </li>
+          <ul class="text-white flex justify-start flex-wrap">
+              <li><a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="https://twitter.com/Emran_Yonas"><i class="mb-2 sm:text-3xl text-1xl fab fa-twitter"></i> <span class="text-sm">Twitter</span></a></li>
+              <li><a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="https://www.linkedin.com/in/emran-yonas-yimer-230192232/"><i class="mb-2 sm:text-3xl text-1xl fab fa-linkedin-in"></i> <span class="text-sm">LinkedIn</span> </a></li>
+              <li><a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="#"><i class="mb-2 sm:text-3xl text-1xl fab fa-instagram"></i> <span class="text-sm">Instagram</span></a></li>
           </ul>
-        </nav>
+      </nav>
+      
+      <section class="text-white pt-4 p-5">
+          <h3 class="text-2xl pb-4">Quick Links</h3>
+          <nav>
+              <ul>
+                  <li class="mb-2"><a href="index.html">Home</a></li>
+                  <li class="mb-2"><a href="skills.html">Skills</a></li>
+                  <li class="mb-2"><a href="projects.html">Projects</a></li>
+                  <li class="mb-2"><a href="contact.html">Contact Me</a></li>
+              </ul>
+          </nav>
+          
       </section>
       <div class="bg-gray-800 text-white p-5 text-center">&copy; Copyright 2023 Emran</div>
-    </footer>
-    <script src="js/index.js"></script>
-  </body>
+  </footer>
+  <script src="js/index.js"></script>
+</body>
 </html>

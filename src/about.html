@@ -1,111 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to my portfolio! Explore a collection of my personal projects, including a Learning Journal, Meme Generator, Quiz App, Mobile Restaurant App, and Movie Watch-List. Each project showcases a variety of skills in web development.">
+
     <meta name="keywords" content="Emran, Digital Portfolio, Projects, Learning Journal, Meme Generator, Quiz App, Mobile Restaurant App, Movie Watch-List, HTML, CSS, JavaScript, React, Web Development">
     <meta name="author" content="Emran Yonas">
     <meta name="robots" content="index, follow">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>About Me - Digital Portfolio</title>
-  </head>
-  <body class="bg-yellow-300">
-    <header class="bg-black flex justify-between items-center h-32 p-5 border-b border-yellow-300">
-      <div>
-        <h1 class="text-yellow-300 text-3xl font-bold">Digital <span class="block text-white mt-1">Portfolio</span>
-        </h1>
-      </div>
-      <nav class="flex justify-center text-white sm:block sm:static absolute bg-black top-32 left-0 right-0 hidden " id="nav-menu">
-        <ul class="flex flex-col sm:flex-row py-4">
-          <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white">
-            <i class="fas fa-house-chimney"></i>
-            <a href="index.html">Home</a>
-          </li>
-          <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white">
-            <i class="fas fa-user"></i>
-            <a href="about.html">About</a>
-          </li>
-          <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white">
-            <i class="fas fa-microscope"></i>
-            <a href="skills.html">Skills</a>
-          </li>
-          <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white">
-            <i class="fas fa-boxes-stacked"></i>
-            <a href="projects.html">Projects</a>
-          </li>
-          <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white">
-            <i class="fas fa-address-book"></i>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="block sm:hidden flex flex-col items-center justify-center" id="toggler">
-        <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
-        <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
-        <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
-      </div>
+</head>
+<body class="bg-yellow-300">
+    <header class="bg-black flex justify-between items-center h-32 p-5 border-b border-yellow-300" >
+        <div>
+            <h1 class="text-yellow-300 text-3xl font-bold">Digital <span class="block text-white mt-1">Portfolio</span></h1>
+        </div>
+        <nav class="flex justify-center text-white sm:block sm:static absolute bg-black top-32 left-0 right-0 hidden " id="nav-menu">
+            <ul class="flex flex-col sm:flex-row py-4">
+              <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-house-chimney"></i> <a href="index.html">Home</a></li>
+              <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-user"></i> <a href="about.html">About</a></li>
+              <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-microscope"></i> <a href="skills.html">Skills</a></li>
+              <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-boxes-stacked"></i> <a href="projects.html">Projects</a></li>
+              <li class="p-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-address-book"></i> <a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        <div class="block sm:hidden flex flex-col items-center justify-center" id="toggler">
+            <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
+            <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
+            <div class="bg-white h-1.5 w-14 mt-2 rounded-full"></div>
+        </div>
     </header>
     <main>
-      <section>
-        <h2 class="text-center text-2xl sm:text-4xl font-semibold mt-5 mb-5">Get to Know Me</h2>
-        <p class="text-center font-light w-4/5 sm:w-1/2 mx-auto  sm:text-2xl line-height-10  mb-10">I'm Emran, a passionate frontend engineer and 3rd-year software engineering student at Addis Ababa Institute of Technology. Started coding in 2022 when I joined Addis Ababa Institute of Technology, quickly becoming a fast learner with a knack for grasping concepts efficiently. Enthusiastic about coding and fascinated by the wonders of the universe, I find solace in exploring the realm of astronomy in my spare time.</p>
-      </section>
-      <div class="flex justify-center mb-10">
-        <audio controls>
-          <source src="Audio/audio.mp3" type="audio/mp3"> Your browser does not support the audio element.
-        </audio>
-      </div>
+        <section>
+            <h2 class="text-center text-2xl sm:text-4xl font-semibold mt-5 mb-5">Get to Know Me</h2>
+            <p class="text-center font-light w-4/5 sm:w-1/2 mx-auto  sm:text-2xl line-height-10  mb-10">I'm Emran, a passionate frontend engineer and 3rd-year software engineering student at Addis Ababa Institute of Technology. Started coding in 2022 when I joined Addis Ababa Institute of Technology, quickly becoming a fast learner with a knack for grasping concepts efficiently. Enthusiastic about coding and fascinated by the wonders of the universe, I find solace in exploring the realm of astronomy in my spare time.</p>
+        </section>
+        <div class="flex justify-center mb-10">
+            <audio controls>
+                <source src="Audio/audio.mp3" type="audio/mp3" >
+                Your browser does not support the audio element.
+            </audio>
+        </div> 
     </main>
     <footer class="bg-black">
-      <div class="mb-8 px-5 pt-5">
-        <h1 class="text-yellow-300 text-4xl font-bold">Digital <span class="block text-white mt-1">Portfolio</span>
-        </h1>
-      </div>
-      <nav class="border-b border-yellow-300 pb-10 p-5">
-        <ul class="text-white flex justify-start flex-wrap">
-          <li>
-            <a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="https://twitter.com/Emran_Yonas">
-              <i class="mb-2 sm:text-3xl text-1xl fab fa-twitter"></i>
-              <span class="text-sm">Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="https://www.linkedin.com/in/emran-yonas-yimer-230192232/">
-              <i class="mb-2 sm:text-3xl text-1xl fab fa-linkedin-in"></i>
-              <span class="text-sm">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="#">
-              <i class="mb-2 sm:text-3xl text-1xl fab fa-instagram"></i>
-              <span class="text-sm">Instagram</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <section class="text-white pt-4 p-5">
-        <h3 class="text-2xl pb-4">Quick Links</h3>
-        <nav>
-          <ul>
-            <li class="mb-2">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="mb-2">
-              <a href="skills.html">Skills</a>
-            </li>
-            <li class="mb-2">
-              <a href="projects.html">Projects</a>
-            </li>
-            <li class="mb-2">
-              <a href="contact.html">Contact Me</a>
-            </li>
-          </ul>
+        <div class="mb-8 px-5 pt-5" >
+            <h1 class="text-yellow-300 text-4xl font-bold">Digital <span class="block text-white mt-1">Portfolio</span></h1>
+        </div>
+        <nav class="border-b border-yellow-300 pb-10 p-5">
+            <ul class="text-white flex justify-start flex-wrap">
+                <li><a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="https://twitter.com/Emran_Yonas"><i class="mb-2 sm:text-3xl text-1xl fab fa-twitter"></i> <span class="text-sm">Twitter</span></a></li>
+                <li><a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="https://www.linkedin.com/in/emran-yonas-yimer-230192232/"><i class="mb-2 sm:text-3xl text-1xl fab fa-linkedin-in"></i> <span class="text-sm">LinkedIn</span> </a></li>
+                <li><a class="flex w-20 flex-col justify-center items-center p-2 px-4 border mr-4 mt-2 rounded" href="#"><i class="mb-2 sm:text-3xl text-1xl fab fa-instagram"></i> <span class="text-sm">Instagram</span></a></li>
+            </ul>
         </nav>
-      </section>
-      <div class="bg-gray-800 text-white p-5 text-center">&copy; Copyright 2023 Emran</div>
+        
+        <section class="text-white pt-4 p-5">
+            <h3 class="text-2xl pb-4">Quick Links</h3>
+            <nav>
+                <ul>
+                    <li class="mb-2"><a href="index.html">Home</a></li>
+                    <li class="mb-2"><a href="skills.html">Skills</a></li>
+                    <li class="mb-2"><a href="projects.html">Projects</a></li>
+                    <li class="mb-2"><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            
+        </section>
+        <div class="bg-gray-800 text-white p-5 text-center">&copy; Copyright 2023 Emran</div>
     </footer>
     <script src="js/index.js"></script>
-  </body>
+</body>
 </html>
