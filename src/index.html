@@ -4,80 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to my portfolio! Explore a collection of my personal projects, including a Learning Journal, Meme Generator, Quiz App, Mobile Restaurant App, and Movie Watch-List. Each project showcases a variety of skills in web development.">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta name="keywords" content="Emran, Digital Portfolio, Projects, Learning Journal, Meme Generator, Quiz App, Mobile Restaurant App, Movie Watch-List, HTML, CSS, JavaScript, React, Web Development">
     <meta name="author" content="Emran Yonas">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home - Digital Portfolio</title>
 </head>
-<body>
-    <header>
+<body class="bg-warning">
+    <header class="bg-dark navbar navbar-expand-lg navbar-dark justify-content-between fixed-top px-3">
         <div>
-            <h1>Digital <span>Portfolio</span></h1>
+          <h1 class="text-warning display-4 ">Digital <span class="d-block text-white mt-1">Portfolio</span></h1>
         </div>
-        <nav>
-            <ul>
-                <li><i class="fas fa-house-chimney"></i> <a href="index.html">Home</a></li>
-                <li><i class="fas fa-user"></i> <a href="about.html">About</a></li>
-                <li><i class="fas fa-microscope"></i> <a href="skills.html">Skills</a></li>
-                <li><i class="fas fa-boxes-stacked"></i> <a href="projects.html">Projects</a></li>
-                <li><i class="fas fa-address-book"></i> <a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation" id="toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse justify-content-end" id="nav-menu">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2 mb-2 mb-lg-0">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-2 mb-2 mb-lg-0">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item px-2 mb-2 mb-lg-0">
+              <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item px-2 mb-2 mb-lg-0">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item px-2 mb-2 mb-lg-0">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome</h2>
+      </header>
+      <main class="mt-5 pt-5">
+        <section class="mt-5 pt-4">
+            <h2 class="text-center fw-bold pt-sm-4">Welcome</h2>
             <article>
-                <h3>Hi, I'm <span>Emran</span></h3>
-                <figure>
-                    <img src="Images/my_image.jpeg" alt="Emran's Image" />
+                <h3 class="text-center h5 mb-3">Hi, I'm <span>Emran</span></h3>
+                <figure class="text-center">
+                    <img src="Images/my_image.jpeg" alt="Emran's Image" class="rounded-circle"/>
                 </figure>
-                <h4>Your Friendly Neighborhood Extraordinaire <span>Frontend</span> Engineer</h4>
-                <nav>
-                    <a href="https://www.linkedin.com/in/emran-yonas-yimer-230192232/"><i class="fab fa-linkedin-in"></i> <span>LinkedIn</span></a>
-                    <a href="#"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
-                    <a href="https://github.com/Emran-Y"><i class="fab fa-github"></i><span>GitHub</span></a>
-                    <a href="mailto:emran.yonas@aait.edu.et"><i class="far fa-envelope"></i><span>Email</span></a>
+                <h4 class="text-center mt-5">Your Friendly Neighborhood <span class="d-block">Extraordinaire</span> <span class="d-block"> Frontend</span> Engineer</h4>
+                <nav class="d-flex justify-content-center flex-wrap mb-3 ">
+                    <a class="d-flex flex-column text-black text-decoration-none justify-content-center align-items-center border border-black p-2 rounded mt-2 me-2 " href="https://www.linkedin.com/in /emran-yonas-yimer-230192232/"><i class="fab fa-linkedin-in"></i> <span>LinkedIn</span></a>
+                    <a class="d-flex flex-column text-black text-decoration-none justify-content-center align-items-center border border-black p-2 rounded mt-2 me-2" href="#"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+                    <a class="d-flex flex-column text-black text-decoration-none justify-content-center align-items-center border border-black p-2 rounded mt-2 me-2" href="https://github.com/Emran-Y"><i class="fab fa-github"></i><span>GitHub</span></a>
+                    <a class="d-flex flex-column text-black text-decoration-none justify-content-center align-items-center border border-black p-2 rounded mt-2 " href="mailto:emran.yonas@aait.edu.et"><i class="far fa-envelope"></i><span>Email</span></a>
                 </nav>
             </article>
         </section>
-        <div>
-                <button>Hire me</button>
-                <a href="CV.pdf" download><span><i class="fas fa-download"></i> Download my CV</span></a>
-            </div>
-    </main>
-    <footer>
-        <div>
-            <h1>Digital <span>Portfolio</span></h1>
+        <div class="d-flex justify-content-center flex-wrap mt-4">
+                <button class="btn btn-dark btn-lg me-3 w-sm-auto  mx-2 mb-2">Hire me</button>
+                <a href="CV.pdf" download class="btn btn-warning border border-black btn-lg  mx-2 mb-2"><span><i class="fas fa-download"></i> Download my CV</span></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="https://twitter.com/Emran_Yonas"><i class="fab fa-twitter"></i> <span>Twitter</span></a></li>
-                <li><a href="https://www.linkedin.com/in/emran-yonas-yimer-230192232/"><i class="fab fa-linkedin-in"></i> <span>LinkedIn</span> </a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i> <span>Instagram</span></a></li>
+    <footer class="bg-dark mt-5 ">
+        <div class="px-3 pt-3">
+          <h1 class="text-warning display-4">Digital <span class="d-block text-white mt-1">Portfolio</span></h1>
+        </div>
+        <nav class="px-3 pb-5">
+            <ul class="d-flex flex-wrap   ps-0">
+                <li><a class="d-flex flex-column text-white text-decoration-none justify-content-center align-items-center border border-white p-2 rounded mt-2 me-2 " href="https://twitter.com/Emran_Yonas"><i class="fab fa-twitter"></i> <span>Twitter</span></a></li>
+                <li><a class="d-flex flex-column text-white text-decoration-none justify-content-center align-items-center border border-white p-2 rounded mt-2 me-2 " href="https://www.linkedin.com/in/emran-yonas-yimer-230192232/"><i class="fab fa-linkedin-in"></i> <span>LinkedIn</span> </a></li>
+                <li><a class="d-flex flex-column text-white text-decoration-none justify-content-center align-items-center border border-white p-2 rounded mt-2 me-2 " href="#"><i class="fab fa-instagram"></i> <span>Instagram</span></a></li>
             </ul>
         </nav>
         
-        <section>
-            <h3>Quick Links</h3>
+        <section class="px-3 border-top border-warning">
+            <h3 class="text-white pt-4">Quick Links</h3>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+                <ul >
+                    <li><a class="text-white text-decoration-none" href="index.html">Home</a></li>
+                    <li><a class="text-white text-decoration-none" href="skills.html">Skills</a></li>
+                    <li><a class="text-white text-decoration-none" href="projects.html">Projects</a></li>
+                    <li><a class="text-white text-decoration-none" href="contact.html">Contact Me</a></li>
                 </ul>
             </nav>
             
         </section>
-        <div>&copy; Copyright 2023 Emran</div>
+        <div class="bg-black text-white py-4 text-center" >&copy; Copyright 2023 Emran</div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>
